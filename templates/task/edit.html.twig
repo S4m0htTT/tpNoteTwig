@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier la tâche
+{% endblock %}
+
+{% block body %}
+	<div class="container py-4">
+		<h1 class="text-center mb-4">Modifier la tâche</h1>
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card shadow-lg">
+					{{ include('task/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center mt-3 d-flex justify-content-center gap-3">
+			<a href="{{ path('app_task_index') }}" class="btn btn-lg btn-secondary">Retour à la liste</a>
+		</div>
+	</div>
+{% endblock %}
