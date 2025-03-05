@@ -7,7 +7,7 @@
 Dans le fichier `.env`, modifiez la ligne `DATABASE_URL` pour qu'elle pointe vers votre base de données :
 
 ```dotenv
-DATABASE_URL="postgresql://postgres:postgres@127.0.0.1:8889/VOTRE_DATABASE"
+DATABASE_URL="mysql://root:root@127.0.0.1:3306/VOTRE_DATABASE"
 ```
 
 ### Créer la base de données :
